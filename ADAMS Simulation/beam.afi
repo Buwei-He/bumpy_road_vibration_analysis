@@ -1,0 +1,77 @@
+$---------------------------------------------------------------------MDI_HEADER
+[MDI_HEADER]
+ FILE_TYPE     =  'afi'
+ FILE_VERSION  =  8.0
+ FILE_FORMAT   =  'ASCII'
+$--------------------------------------------------------------------------UNITS
+[UNITS]
+ LENGTH  =  'mm'
+ ANGLE   =  'degrees'
+ FORCE   =  'newton'
+ MASS    =  'kg'
+ TIME    =  'second'
+$--------------------------------------------------------------------------MODEL
+[MODEL]
+ TYPE  =  'STD'
+ FORMAT  =  'STD'
+ MODE  =  1
+$-----------------------------------------------------------------------ANALYSIS
+[ANALYSIS]
+ TYPE  =  'MODAL_STRESS_STRAIN'
+ MODES  =  20
+$---------------------------------------------------------------MODEL_1_GEOMETRY
+[MODEL_1_GEOMETRY]
+ GEOMETRY_TYPE  =  'PARASOLID'
+ GEOMETRY_FORMAT  =  ' '
+ GEOMETRY_FILE  =  ' '
+ GEOMETRY_TRA_X  =  0.0
+ GEOMETRY_TRA_Y  =  0.0
+ GEOMETRY_TRA_Z  =  0.0
+ GEOMETRY_ROT_X  =  0.0
+ GEOMETRY_ROT_Y  =  0.0
+ GEOMETRY_ROT_Z  =  0.0
+$-------------------------------------------------------------------MODEL_1_MESH
+[MODEL_1_MESH]
+ ELEMENT_TYPE  =  'Solid'
+ ELEMENT_SHAPE  =  'Tetrahedral'
+ ELEMENT_ORDER  =  'Linear'
+ ELEMENT_SIZE_CALC  =  'AUTO'
+ ELEMENT_SIZE  =  10.0
+ ELEMENT_MINSIZE  =  5.0
+ ANGLE_PER_ELEMENT  =  45.0
+ ELEMENT_GROWTHRATE  =  1.5
+ SAVE_MESH  =  'no'
+ MESH_FILE  =  'beam.mnf'
+$---------------------------------------------------------------MODEL_1_MESH_EXT
+[MODEL_1_MESH_EXT]
+ NORMAL_DIRECTION  =  'Z'
+ EDGE_SHAPE  =  'Straight'
+ MSN_BASED_REFINEMENT  =  'Off'
+ CURVATURE_BASED_SCALE  =  'Off'
+$---------------------------------------------------------------MODEL_1_MATERIAL
+[MODEL_1_MATERIAL]
+ THICKNESS  =  1.0
+ YOUNG  =  2.07E+05
+ POISSON  =  0.29
+ DENSITY  =  7.801E-06
+$--------------------------------------------------------MODEL_1_ATTACHMENT_GEOM
+[MODEL_1_ATTACHMENT_GEOM]
+{id    type           x           y           z           group}
+6843.0   1.0   -50.0   889.0   411.3848963297   0.0
+4604.0   2.0   -50.0   889.0   411.3849   1.0   
+4405.0   2.0   -50.0   889.0   401.6369   1.0   
+4613.0   2.0   -40.004   889.0   411.3849   1.0   
+5015.0   2.0   -50.0   879.0   411.3849   1.0
+$---------------------------------------------------------MODEL_1_ATTACHMENT_MAP
+[MODEL_1_ATTACHMENT_MAP]
+{id    tx    ty    tz     rx    ry    rz  connect link  params  group}
+6843.0   1.0   1.0   1.0   1.0   1.0   1.0   1.0   1.0   3.0   1.0
+$---------------------------------------------------------------------AVIEW_DATA
+[AVIEW_DATA]
+ SOLID  =  'beam'
+ MATERIAL  =  'steel'
+ STRESS_LAYER  =  'Top'
+$--------------------------------------------------------------AVIEW_ATTACHMENTS
+[AVIEW_ATTACHMENTS]
+{ attachments_reference_name }
+reference_1

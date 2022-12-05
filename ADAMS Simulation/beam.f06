@@ -1,0 +1,471 @@
+Beginning Analysis
+
+ *** START OF CONTROL FILE ECHO ***
+ $ sysfield=SCR*(RAW=YES,BUFFIO=YES,wnum=16,wsize=16mb) $(c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/conf/nast20190.rcf[2])
+ $ sysfield=DBALL(RAW=YES,BUFFIO=YES,wnum=16,wsize=16mb) $(c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/conf/nast20190.rcf[3])
+ JID='d:\Dropbox\arena_full\beam.dat'
+ OUT='./beam'
+ MEM=8123MB      $
+ MACH='Intel'
+ OPER='Windows 10 Home China'
+ OSV='6.2 9200'
+ MODEL='Xeon/3567 (DESKTOP-MI2KDTB)'
+ NPROC='8'
+ CONFIG=6
+ NPROC=8
+ symbol=DELDIR='c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/msc20190/nast/del' $(program default)
+ symbol=DEMODIR='c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/msc20190/nast/demo' $(program default)
+ symbol=MKL_INTERFACE_LAYER=ILP64 $(c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/conf/nast20190.rcf[1])
+ symbol=SSSALTERDIR='c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/msc20190/nast/sssalter' $(program default)
+ symbol=TPLDIR='c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/msc20190/nast/tpl' $(program default)
+ SDIR='./beam.T30304_19'
+ DBS='./beam.T30304_19'
+ SCR='yes'
+ SMEM=100
+ BPOOL=2030.9MB
+ DMPMEM=estimate
+ NEWDEL='c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/msc20190/win64i8/SSS'
+ DEL='c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/msc20190/win64i8/sss'
+ DML=MSCDEF
+ SDL=MSCDEF
+ AUTH='27502@10.20.32.48'
+ AUTHQUE=20
+ MSGCAT='c:/msc~1.sof/adams/2019_2/viewflex/mdss/win8664/msc20190/win64i8/analysis.msg'
+ MSGDEST='f06'
+ PROG=AVFLEX
+ *** END OF CONTROL FILE ECHO ***
+
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2018 MSC Software Corporation and its licensors. All rights reserved.         
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           MSC Software          * *
+                                              * *               CORP              * *
+                                              * *                                 * *
+                                              * *  DMAPSOLVER  C o m p o n e n t  * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *     Version 2019.0.0-CL621679   * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          DEC 18, 2018           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *MODEL Xeon/3567 (DESKTOP-MI2KDTB * *
+                                              * * Windows 10 Home China 6.2 9200  * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     $ SYSFIELD=SCR*(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(C:/MSC|1.SOF/ADAMS/2019
+     $ SYSFIELD=DBALL(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(C:/MSC|1.SOF/ADAMS/201
+     $                                                                               
+     $ EXPORTED BY VIEWFLEX                                                          
+     $                                                                               
+     $ ESTIMATED NUMBER OF DOFS:        20526                                        
+     $ ESTIMATED NUMBER OF GRIDS:       6842                                         
+     $ ESTIMATED NUMBER OF 1D ELEMENTS: 0                                            
+     $ ESTIMATED NUMBER OF 2D ELEMENTS: 0                                            
+     $ ESTIMATED NUMBER OF 3D ELEMENTS: 25004                                        
+     $                                                                               
+     $ ESTIMATED BUFFER SIZE: 8193                                                   
+     $ ESTIMATED MEMORY SIZE: MAX                                                    
+     $                                                                               
+     NASTRAN BUFFSIZE=8193                                                           
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     SOL 103                                                                                 
+     CEND                                                                                    
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      ECHO   = NONE                                                                           
+                  2      METHOD = 1                                                                              
+                  3      ADAMSMNF FLEXBODY=YES                                                                   
+                  4      AUTOSPC(NOPRINT)=YES                                                                    
+                  5      STRESS(PLOT)   = ALL                                                                    
+                  6      GPSTRESS(PLOT) = ALL                                                                    
+                  7      STRAIN(PLOT,FIBER) = ALL                                                                
+                  8      GPSTRAIN(PLOT)     = ALL                                                                
+                  9      OUTPUT(POST)                                                                            
+                 10      SET 91 = ALL                                                                            
+                 11      SURFACE 92 SET 91 FIBRE Z2 NORMAL Z                                                     
+                 12      SET 93 = ALL                                                                            
+                 13      VOLUME 94 SET 93 DIRECT                                                                 
+                 14      BEGIN BULK                                                                              
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                         ASET                        1
+                                       CTETRA                    25004
+                                          DTI                        1
+                                        EIGRL                        1
+                                         GRID                     6843
+                                         MAT1                        1
+                                        PARAM                        2
+                                       PSOLID                        1
+                                         RBE2                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                           O U T P U T   F R O M   G R I D   P O I N T   W E I G H T   G E N E R A T O R
+0                                                     REFERENCE POINT =        0
+                                                                M O
+                      *  3.120400E+01  0.000000E+00  0.000000E+00  0.000000E+00 -1.836714E+01 -2.742831E+01 *
+                      *  0.000000E+00  3.120400E+01  0.000000E+00  1.836714E+01  0.000000E+00 -2.173825E-17 *
+                      *  0.000000E+00  0.000000E+00  3.120400E+01  2.742831E+01 -8.922984E-17  0.000000E+00 *
+                      *  0.000000E+00  1.836714E+01  2.742831E+01  4.532395E+01 -1.563360E-05 -7.197889E-07 *
+                      * -1.836714E+01  0.000000E+00 -8.922984E-17 -1.563360E-05  2.123933E+01  1.614472E+01 *
+                      * -2.742831E+01 -2.173825E-17  0.000000E+00 -7.197889E-07  1.614472E+01  2.413744E+01 *
+                                                                 S
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+                               DIRECTION
+                          MASS AXIS SYSTEM (S)     MASS              X-C.G.        Y-C.G.        Z-C.G.
+                                  X            3.120400E+01      0.000000E+00  8.790000E-01 -5.886151E-01
+                                  Y            3.120400E+01     -6.966496E-19  0.000000E+00 -5.886151E-01
+                                  Z            3.120400E+01      2.859564E-18  8.790000E-01  0.000000E+00
+                                                                I(S)
+                                           *  1.040329E+01  1.563360E-05  7.197889E-07 *
+                                           *  1.563360E-05  1.042815E+01  6.761432E-07 *
+                                           *  7.197889E-07  6.761432E-07  2.795143E-02 *
+                                                                I(Q)
+                                           *  1.040329E+01                             *
+                                           *                1.042815E+01               *
+                                           *                              2.795143E-02 *
+                                                                 Q
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+  
+ *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
+     THE DECOMPOSITION OF KOO      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    3.553688E+04
+ *** USER INFORMATION MESSAGE 5010 (LNCILS)
+     STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
+     TRIAL EIGENVALUE = 3.502284D+05, CYCLES = 9.418805D+01 THE STURM COUNT = 4
+ *** USER INFORMATION MESSAGE 5010 (LNCILS)
+     STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
+     TRIAL EIGENVALUE = 7.277345D+07, CYCLES = 1.357709D+03 THE STURM COUNT = 20
+
+ TABLE OF SHIFTS:  (LNNRIGL)
+ SHIFT #        SHIFT VALUE         FREQUENCY, CYCLES     # EIGENVALUES BELOW    # NEW EIGENVALUES FOUND
+     1.        3.5022838E+05          9.4188049E+01                 4                       20
+     2.        7.2773452E+07          1.3577088E+03                20                        0
+
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+0
+
+
+                          E I G E N V A L U E  A N A L Y S I S   S U M M A R Y   (READ MODULE) 
+
+
+
+                                     BLOCK SIZE USED ......................     7
+
+                                     NUMBER OF DECOMPOSITIONS .............     2
+
+                                     NUMBER OF ROOTS FOUND ................    20
+
+                                     NUMBER OF SOLVES REQUIRED ............    10
+
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                              R E A L   E I G E N V A L U E S
+                                         (BEFORE AUGMENTATION OF RESIDUAL VECTORS)
+   MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
+    NO.       ORDER                                                                       MASS              STIFFNESS
+        1         1        7.758505E+02        2.785409E+01        4.433117E+00        1.000000E+00        7.758505E+02
+        2         2        2.755081E+03        5.248887E+01        8.353863E+00        1.000000E+00        2.755081E+03
+        3         3        3.296722E+04        1.815688E+02        2.889757E+01        1.000000E+00        3.296722E+04
+        4         4        2.689523E+05        5.186061E+02        8.253873E+01        1.000000E+00        2.689523E+05
+        5         5        3.582352E+05        5.985275E+02        9.525862E+01        1.000000E+00        3.582352E+05
+        6         6        9.831180E+05        9.915231E+02        1.578058E+02        1.000000E+00        9.831180E+05
+        7         7        1.127751E+06        1.061956E+03        1.690156E+02        1.000000E+00        1.127751E+06
+        8         8        2.949263E+06        1.717342E+03        2.733234E+02        1.000000E+00        2.949263E+06
+        9         9        3.298649E+06        1.816218E+03        2.890601E+02        1.000000E+00        3.298649E+06
+       10        10        6.460739E+06        2.541798E+03        4.045398E+02        1.000000E+00        6.460739E+06
+       11        11        9.291989E+06        3.048276E+03        4.851483E+02        1.000000E+00        9.291989E+06
+       12        12        9.810946E+06        3.132243E+03        4.985119E+02        1.000000E+00        9.810946E+06
+       13        13        1.334456E+07        3.653021E+03        5.813963E+02        1.000000E+00        1.334456E+07
+       14        14        1.690682E+07        4.111791E+03        6.544118E+02        1.000000E+00        1.690682E+07
+       15        15        2.195476E+07        4.685590E+03        7.457349E+02        1.000000E+00        2.195476E+07
+       16        16        2.755650E+07        5.249428E+03        8.354724E+02        1.000000E+00        2.755650E+07
+       17        17        3.854832E+07        6.208729E+03        9.881499E+02        1.000000E+00        3.854832E+07
+       18        18        4.090653E+07        6.395821E+03        1.017927E+03        1.000000E+00        4.090653E+07
+       19        19        5.087479E+07        7.132657E+03        1.135198E+03        1.000000E+00        5.087479E+07
+       20        20        6.370381E+07        7.981466E+03        1.270290E+03        1.000000E+00        6.370381E+07
+ *** USER INFORMATION MESSAGE 5458 (REIG)
+     QL HOUSEHOLDER METHOD IS AUTOMATICALLY SELECTED .
+ *** USER INFORMATION MESSAGE 5458 (REIG)
+     QL HOUSEHOLDER METHOD IS AUTOMATICALLY SELECTED .
+ *** USER INFORMATION MESSAGE 5458 (REIG)
+     QL HOUSEHOLDER METHOD IS AUTOMATICALLY SELECTED .
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE    10
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                              R E A L   E I G E N V A L U E S
+                                         (AFTER AUGMENTATION OF RESIDUAL VECTORS)
+   MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
+    NO.       ORDER                                                                       MASS              STIFFNESS
+        1         1        7.758505E+02        2.785409E+01        4.433117E+00        1.000000E+00        7.758505E+02
+        2         2        2.755081E+03        5.248887E+01        8.353863E+00        1.000000E+00        2.755081E+03
+        3         3        3.296722E+04        1.815688E+02        2.889757E+01        1.000000E+00        3.296722E+04
+        4         4        2.689523E+05        5.186061E+02        8.253873E+01        1.000000E+00        2.689523E+05
+        5         5        3.582352E+05        5.985275E+02        9.525862E+01        1.000000E+00        3.582352E+05
+        6         6        9.831180E+05        9.915231E+02        1.578058E+02        1.000000E+00        9.831180E+05
+        7         7        1.127751E+06        1.061956E+03        1.690156E+02        1.000000E+00        1.127751E+06
+        8         8        2.949263E+06        1.717342E+03        2.733234E+02        1.000000E+00        2.949263E+06
+        9         9        3.298649E+06        1.816218E+03        2.890601E+02        1.000000E+00        3.298649E+06
+       10        10        6.460739E+06        2.541798E+03        4.045398E+02        1.000000E+00        6.460739E+06
+       11        11        9.291989E+06        3.048276E+03        4.851483E+02        1.000000E+00        9.291989E+06
+       12        12        9.810946E+06        3.132243E+03        4.985119E+02        1.000000E+00        9.810946E+06
+       13        13        1.334456E+07        3.653021E+03        5.813963E+02        1.000000E+00        1.334456E+07
+       14        14        1.690682E+07        4.111791E+03        6.544118E+02        1.000000E+00        1.690682E+07
+       15        15        2.195476E+07        4.685590E+03        7.457349E+02        1.000000E+00        2.195476E+07
+       16        16        2.755650E+07        5.249428E+03        8.354724E+02        1.000000E+00        2.755650E+07
+       17        17        3.854832E+07        6.208729E+03        9.881499E+02        1.000000E+00        3.854832E+07
+       18        18        4.090653E+07        6.395821E+03        1.017927E+03        1.000000E+00        4.090653E+07
+       19        19        5.087479E+07        7.132657E+03        1.135198E+03        1.000000E+00        5.087479E+07
+       20        20        6.370381E+07        7.981466E+03        1.270290E+03        1.000000E+00        6.370381E+07
+       21        21        8.764020E+07        9.361634E+03        1.489950E+03        1.000000E+00        8.764020E+07
+       22        22        8.955305E+07        9.463247E+03        1.506123E+03        1.000000E+00        8.955305E+07
+       23        23        1.205138E+08        1.097788E+04        1.747183E+03        1.000000E+00        1.205138E+08
+       24        24        1.319400E+08        1.148651E+04        1.828135E+03        1.000000E+00        1.319400E+08
+       25        25        3.026328E+08        1.739634E+04        2.768714E+03        1.000000E+00        3.026328E+08
+       26        26        4.847916E+08        2.201798E+04        3.504271E+03        1.000000E+00        4.847916E+08
+ ^^^     
+ ^^^   NASTRAN/ADAMS INTERFACE DMAP INFORMATION MESSAGE: 
+ ^^^     
+ ^^^   READ MODULE IS BEING USED FOR A-SET ORTHONORMALIZATION    
+ ^^^     
+ *** USER INFORMATION MESSAGE 5458 (REIG)
+     QL HOUSEHOLDER METHOD IS AUTOMATICALLY SELECTED .
+ ^^^     
+ ^^^   NASTRAN/ADAMS INTERFACE DMAP INFORMATION MESSAGE: 
+ ^^^     
+ ^^^   DURING A-SET ORTHONORMALIZATION,  
+ ^^^   A TOTAL OF   32         MODES WERE FOUND    
+ ^^^   OUT OF A POSSIBLE    32         .   
+ ^^^     
+ ^^^                                     
+ ^^^ NASTRAN/ADAMS EIGENVALUES FROM A-SET ORTHONORMALIZATION:    
+ ^^^                     FOR SUPERELEMENT   0          
+ ^^^                                     
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                              R E A L   E I G E N V A L U E S
+   MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
+    NO.       ORDER                                                                       MASS              STIFFNESS
+        1         1       -5.844155E-06        2.417469E-03        3.847521E-04        1.000000E+00       -5.844155E-06
+        2         2       -3.153058E-06        1.775685E-03        2.826091E-04        1.000000E+00       -3.153058E-06
+        3         3       -1.174628E-06        1.083802E-03        1.724925E-04        1.000000E+00       -1.174628E-06
+        4         4        1.262879E-06        1.123779E-03        1.788550E-04        1.000000E+00        1.262879E-06
+        5         5        2.806561E-06        1.675279E-03        2.666290E-04        1.000000E+00        2.806561E-06
+        6         6        9.263357E-06        3.043576E-03        4.844002E-04        1.000000E+00        9.263357E-06
+        7         7        4.345823E+04        2.084664E+02        3.317845E+01        1.000000E+00        4.345823E+04
+        8         8        3.292339E+05        5.737891E+02        9.132136E+01        1.000000E+00        3.292339E+05
+        9         9        6.923783E+05        8.320927E+02        1.324317E+02        1.000000E+00        6.923783E+05
+       10        10        1.262677E+06        1.123689E+03        1.788406E+02        1.000000E+00        1.262677E+06
+       11        11        3.443390E+06        1.855637E+03        2.953338E+02        1.000000E+00        3.443390E+06
+       12        12        5.093695E+06        2.256921E+03        3.592002E+02        1.000000E+00        5.093695E+06
+       13        13        5.423430E+06        2.328826E+03        3.706442E+02        1.000000E+00        5.423430E+06
+       14        14        7.644158E+06        2.764807E+03        4.400327E+02        1.000000E+00        7.644158E+06
+       15        15        1.484296E+07        3.852657E+03        6.131694E+02        1.000000E+00        1.484296E+07
+       16        16        1.872139E+07        4.326823E+03        6.886352E+02        1.000000E+00        1.872139E+07
+       17        17        2.174017E+07        4.662636E+03        7.420815E+02        1.000000E+00        2.174017E+07
+       18        18        2.615866E+07        5.114554E+03        8.140065E+02        1.000000E+00        2.615866E+07
+       19        19        4.291645E+07        6.551065E+03        1.042634E+03        1.000000E+00        4.291645E+07
+       20        20        4.841354E+07        6.957984E+03        1.107398E+03        1.000000E+00        4.841354E+07
+       21        21        4.920185E+07        7.014403E+03        1.116377E+03        1.000000E+00        4.920185E+07
+       22        22        6.598712E+07        8.123246E+03        1.292855E+03        1.000000E+00        6.598712E+07
+       23        23        6.667528E+07        8.165494E+03        1.299579E+03        1.000000E+00        6.667528E+07
+       24        24        9.628937E+07        9.812715E+03        1.561742E+03        1.000000E+00        9.628937E+07
+       25        25        1.207979E+08        1.099081E+04        1.749242E+03        1.000000E+00        1.207979E+08
+       26        26        1.319441E+08        1.148669E+04        1.828164E+03        1.000000E+00        1.319441E+08
+       27        27        6.968491E+08        2.639790E+04        4.201356E+03        1.000000E+00        6.968491E+08
+       28        28        1.167959E+09        3.417541E+04        5.439186E+03        1.000000E+00        1.167959E+09
+       29        29        1.933274E+09        4.396901E+04        6.997885E+03        1.000000E+00        1.933274E+09
+       30        30        5.887170E+09        7.672790E+04        1.221162E+04        1.000000E+00        5.887170E+09
+       31        31        7.817405E+10        2.795962E+05        4.449912E+04        1.000000E+00        7.817405E+10
+       32        32        1.679630E+11        4.098329E+05        6.522693E+04        1.000000E+00        1.679630E+11
+ *** USER WARNING MESSAGE 4597 (GPST1A)
+     A SURFACE OR VOLUME CARD WITH ID = 92 REFERENCES A SET ID =91
+     WHICH CONTAINS NOELEMENTS OF PERMISSIBLE TYPE.
+ ^^^      NASTRAN/ADAMS INTERFACE        
+ ^^^      CALLING ADAMS MNF MODULE       
+ MNF_Info: Title: 
+ MNF_Info: Name : ./beam_0.mnf
+ MNF_Info: Type :  MSC.Nastran
+ MNF_Info: Comment 1: 
+ MNF_Info: Comment 2:  MNF created by the Adams Flex Toolkit Module Interface
+ MNF_Info: Comment 3: 
+ MNF_Info: Temp modeshape file: ./beam.T30304_19.mnf_01
+ MNF_Info: Temp modal stress file: ./beam.T30304_19.mnf_02
+ MNF_Info: Temp modal strain file: ./beam.T30304_19.mnf_03
+ MNF_Info: Exporting frequency range [-1.000000e+00,1.000000e+08]
+ MNF_Info:  Shortened Shape mode file: ./beam.T30304_19.mnf_04
+ MNF_Info:  Shortened Stress mode file: ./beam.T30304_19.mnf_05
+ MNF_Info:  Shortened Strain mode file: ./beam.T30304_19.mnf_06
+ MNF_Info: 
+ MNF_Info: Creating a Modal Neutral File with the following information:
+ MNF_Info:                   Nodal Coords Yes
+ MNF_Info:                  Element Faces Yes
+ MNF_Info:                    Eigenvalues Yes
+ MNF_Info:                    Mode Shapes Yes
+ MNF_Info:         Global Mass Properties Yes
+ MNF_Info:                   Nodal Masses Yes
+ MNF_Info:                 Nodal Inertias No
+ MNF_Info:          Generalized Stiffness Yes
+ MNF_Info:               Generalized Mass Yes
+ MNF_Info:            Generalized Damping No
+ MNF_Info:            Mode Transformation Yes
+ MNF_Info:                   Stress Modes Yes
+ MNF_Info:                Interface Nodes Yes
+ MNF_Info:             Inertia Invariants Yes
+ MNF_Info:                  Modal Preload No
+ MNF_Info:                    Modal Loads No
+ MNF_Info:                   Strain Modes Yes
+ MNF_Info:               Nodal Pre-Stress No
+ MNF_Info:               Nodal Pre-Strain No
+ MNF_Info:                 Monitor Points No
+ MNF_Info:               Matrix Operators No
+ MNF_Info:               Modal Load Nodal No
+ MNF_Info: 
+ MNF_Info: Node info:
+ MNF_Info:    Count: 6843
+ MNF_Info: 
+ MNF_Info: Global body properties:
+ MNF_Info: Mass          : 31.203998
+ MNF_Info: Center of Mass: 0.000000 0.879000 -0.588615
+ MNF_Info: Inertia Tensor: 45.323953 0.000016 0.000001
+ MNF_Info:                 0.000016 21.239325 -16.144718
+ MNF_Info:                 0.000001 -16.144718 24.137440
+ MNF_Info: 
+ MNF_Info: Eigenvalue info:
+ MNF_Info:    Modes: 32
+ MNF_Info: 
+ MNF_Info: Trans Mode info:
+ MNF_Info:    Modes: 32
+ MNF_Info:    Nodes: 6843
+ MNF_Info: 
+ MNF_Info: Writing Mode Shapes
+ *** USER WARNING MESSAGE 7811 (MNF_Warning)
+     MNF MESSAGE:  Found 1 massless node(s)
+ MNF_Info: 
+ MNF_Info: Units:
+ MNF_Info:    Mass:   KILOGRAM
+ MNF_Info:    Length: METER
+ MNF_Info:    Time:   SECOND
+ MNF_Info:    Force:  NEWTON
+ MNF_Info: 
+ MNF_Info: Number of Element Faces: 100020
+ MNF_Info: 
+ MNF_Info: Stress Mode info:
+ MNF_Info:    Modes: 32
+ MNF_Info:    Nodes: 6842
+ MNF_Info: 
+ MNF_Info: Strain Mode info:
+ MNF_Info:    Modes: 32
+ MNF_Info:    Nodes: 6842
+ *** SYSTEM INFORMATION MESSAGE 7801 (AFERRM)
+     THE ADAMS/FLEX MNF TOOLKIT SUCCESSFULLY CREATED A MODAL NEUTRAL FILE FOR SUPERELEMENT OR MODULE ID        0.
+ ^^^                         
+ ^^^ NASTRAN/ADAMS INTERFACE SHAPES COMPLETED    
+ ^^^        EXIT REQUESTED       
+ ^^^                         
+1                                                                               MAY  20, 2021      Adams Vi12/18/18   PAGE    12
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     71
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    T    T    T    T     T      T      F      0     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+ 
+ No PARAM values were set in the Control File.
+ 
+1                                        * * * END OF JOB * * *
+ 
+ 
+ No Symbolic Replacement variables or values were specified.
+

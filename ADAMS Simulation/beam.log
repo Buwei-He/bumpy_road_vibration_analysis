@@ -1,0 +1,12 @@
+11:14:23  Feature ADAMS_ViewFlex found in license file.
+11:14:24  Analysis started.
+11:14:24  Geometry access/verification to CAD part initiated (if needed).
+11:14:24  Geometry access/verification to CAD part successfully completed (if needed).
+11:14:24  Finite element model generation started.
+11:14:24  Finite element model generated 41058 degrees of freedom.
+11:14:24  Finite element model generation successfully completed.
+11:14:24  Application of Loads and Boundary Conditions to the finite element model started.
+11:14:24  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+11:14:41  29 records read from JID file "d:\Dropbox\arena_full\beam.dat"
+11:14:41  NSEXIT: EXIT(0)
+
